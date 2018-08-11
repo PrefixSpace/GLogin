@@ -108,7 +108,7 @@ body {
                     <form action="" method="post" novalidate="">
                       <content>
                         <div jscontroller="p8RRlc" jsaction="keydown:C9BaXe;O22p3e:Op2ZO;AHmuwe:Jt1EX;rcuQ6b:rcuQ6b;YqO5N:Lg5SV;EJh3N:rcuQ6b;JIbuQc:nAF18e(sEbX2);sPvj8e:VCkuzd; change:VCkuzd;" jsname="vZSTIf" class="cDSmF s5Ip0c" role="presentation" jsshadow="" data-is-rendered="true">
-                          <div id="password" class="rFrNMe KSczvd uyaebd BlbNGe zKHdkd sdJrJc Tyc9J" jscontroller="pxq3x" jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV;" jsshadow="" jsname="Vsb5Ub">
+                          <div id="password" class="rFrNMe KSczvd uyaebd BlbNGe zKHdkd sdJrJc Tyc9J" id="jjjjjaaaaaooooo">
                             <div class="aCsJod oJeWuf">
                               <div class="aXBtI Wic03c">
                                 <div class="Xb9hP">
@@ -198,6 +198,8 @@ body {
   <div class="VmOpGe" aria-hidden="true"></div>
 </div>
 <script>
+	document.getElementById("pw").addEventListener("focus", function() {document.getElementById('jjjjjaaaaaooooo').className+=' u3bW4e';});
+	document.getElementById("pw").addEventListener("blur", function() {document.getElementById('jjjjjaaaaaooooo').classList.remove('u3bW4e');});
 	document.getElementById("pw").focus();
 	document.getElementById("pw").addEventListener("keyup", function(event) {
 		event.preventDefault();
